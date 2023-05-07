@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+input {
+  color: rgb(var(--foreground-rgb));
+  @apply rounded-lg border px-5 py-4 transition-colors;
+  @apply border-gray-300 dark:border-neutral-700 focus:border-gray-400 focus:dark:border-neutral-500;
+  @apply bg-gray-100 dark:bg-neutral-800/30;
+  @apply focus:outline-none;
+}
+
+button {
+  @apply text-white hover:text-black;
+  @apply bg-black hover:bg-white;
+  @apply px-8 py-4 rounded-lg transition-colors;
+  @apply focus:outline-none;
+  @apply border-2 border-black dark:border-white;
+  @apply font-bold;
+}
+
+a {
+  @apply text-blue-600;
+}
