@@ -16,6 +16,12 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -35,8 +41,8 @@ input {
 }
 
 button {
-  @apply text-white hover:text-black;
-  @apply bg-black hover:bg-white;
+  @apply text-black dark:text-white hover:text-white dark:hover:text-black;
+  @apply bg-black hover:bg-black dark:hover:bg-white;
   @apply px-8 py-4 rounded-lg transition-colors;
   @apply focus:outline-none;
   @apply border-2 border-black dark:border-white;
