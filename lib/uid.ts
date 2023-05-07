@@ -1,5 +1,5 @@
-import ShortUniqueId from "short-unique-id";
+import { uid as _uid } from "uid";
 
-export const uid = new ShortUniqueId({
-  length: 8,
-});
+export function uid() {
+  return _uid(8);
+}
