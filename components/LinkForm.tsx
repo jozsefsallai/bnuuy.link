@@ -52,6 +52,7 @@ export default function LinkForm() {
       >
         <input
           onChange={(e) => setPostUrl(e.target.value)}
+          value={postUrl}
           className={`${inter.className} w-96 max-w-full`}
           type="url"
           name="url"
